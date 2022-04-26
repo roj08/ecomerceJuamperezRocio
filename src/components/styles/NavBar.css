@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url(img/Webp.net-resizeimage.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .logo-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-image: url(img/CositasBonitasLogo.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .nav-container {
+    display: flex;
+  }
+  
+  .nav-container li {
+    margin: 0 10px;
+    list-style: none;
+  }
+  
+  .nav-container li a {
+    text-decoration: none;
+    color: rgb(230, 146, 12);
+    font-weight: 800;
+    font-size: 18px;
+  }
