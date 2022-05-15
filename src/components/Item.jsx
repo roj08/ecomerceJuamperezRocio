@@ -2,7 +2,7 @@ import ItemCount from './ItemCount.jsx';
 import swal from 'sweetalert';
 import './styles/Item.css';
 
-const Item = ({ name, image, price, id, stock }) => {
+const Item = (item) => {
   const onAdd = (qty) => {
     swal({
         title: "Completado",
@@ -13,12 +13,12 @@ const Item = ({ name, image, price, id, stock }) => {
 
   return (
     <article className="product-card">
-      <img className="product-card__image" src={image} alt="" />
+      <img className="product-card__image" src={item.image} alt="" />
 
-      <h3 className="product-card__name">{name}</h3>
-      <span className="product-card__name">${price}</span>
+      <h3 className="product-card__name">{item.name}</h3>
+      <span className="product-card__name">${item.price}</span>
 
-      <ItemCount stock={stock} onAdd={onAdd} initial={1} />
+      <ItemCount stock={item.stock} onAdd={onAdd} initial={1} />
     </article>
   );
 };
